@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Sistema binario</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main id="app" aria-label="Simulación 3D de un sistema binario de planetas"></main>
+
+    <div class="hud" aria-hidden="true">
+      <h1>Sistema binario</h1>
+      <p><span class="dot dot-a"></span>A · planeta rocoso <span class="sep"></span><span class="dot dot-b"></span>B · gigante gaseoso</p>
+      <p class="hint">Arrastrar: rotar · Rueda: zoom · Espacio: pausa · H: panel</p>
+    </div>
+
+    <div id="loading" class="overlay" role="status">
+      <div class="spinner"></div>
+      <p>Generando superficies planetarias…</p>
+    </div>
+
+    <div id="error" class="overlay overlay-error" role="alert" hidden>
+      <h2>No se puede mostrar la escena</h2>
+      <p></p>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
